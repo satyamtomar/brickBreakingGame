@@ -23,7 +23,7 @@ let difLev=1;
 function setup() {
   createCanvas(width, height);
   
-  setInterval(gameLevel,difLev*10000);
+  setInterval(gameLevel,15000);
   
   for(let i=0;i<brickRows;i++)
     {
@@ -46,7 +46,7 @@ function draw() {
   
   //paddle
   fill('rgb(18,93,110)')
-  rect(paddle_x,paddle_y,paddleWidth,paddleHeight,2);
+  rect(paddle_x,paddle_y,paddleWidth,paddleHeight,5);
   
   
   //brick
@@ -73,13 +73,13 @@ function gameLevel()
 {
   brickRows++;
   
-  if(ball_dy<4)
+  if(ball_dy<5)
     {
       ball_dy++;
       difLev++;
     }
   
-  if(ball_dx<6)
+  if(ball_dx<7)
     {
       ball_dx++;
     }
