@@ -1,19 +1,19 @@
 let bricks=[]
-let brickRows=5;
-let brickColumns=8
-let width=400;
-let height=400;
+let brickRows=6;
+let brickColumns=8;
+let width=800;
+let height=800;
 let ball_x=width/2;
 let ball_y=height/2;
 let ballDiameter=25;
 let ball_dx=3;
 let ball_dy=1;
-let brickWidth=50;
-let brickHeight=20;
+let brickWidth=100;
+let brickHeight=40;
 let paddle_x=0;
 let paddle_y=height-30;
-let paddleWidth=80;
-let paddleHeight=20;
+let paddleWidth=120;
+let paddleHeight=30;
 let ballDirX='+';
 let ballDirY='+';
 let score=0;
@@ -186,4 +186,3 @@ function ballMovement()
     ball_y=ball_y-ball_dy;
   }
 }
-
